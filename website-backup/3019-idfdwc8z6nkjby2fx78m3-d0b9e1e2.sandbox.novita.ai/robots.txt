@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://8080-idfdwc8z6nkjby2fx78m3-d0b9e1e2.sandbox.novita.ai/sitemap.xml

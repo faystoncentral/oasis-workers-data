@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Extractor</title>
+</head>
+<body>
+    <h1>Extracting Data...</h1>
+    <pre id="output"></pre>
+    
+    <script>
+    async function extractData() {
+        const output = document.getElementById('output');
+        
+        // Load the website in iframe
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://3019-idfdwc8z6nkjby2fx78m3-d0b9e1e2.sandbox.novita.ai/';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        
+        // Wait for load
+        await new Promise((resolve) => {
+            iframe.onload = () => setTimeout(resolve, 3000);
+        });
+        
+        try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            
+            // Extract localStorage
+            const localStorage = iframe.contentWindow.localStorage;
+            const localData = {};
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                localData[key] = localStorage.getItem(key);
+            }
+            
+            output.textContent += 'LocalStorage Data:\n';
+            output.textContent += JSON.stringify(localData, null, 2) + '\n\n';
+            
+            // Extract all text
+            output.textContent += 'Page Content:\n';
+            output.textContent += iframeDoc.body.innerText;
+            
+        } catch (e) {
+            output.textContent += 'Error (CORS): ' + e.message + '\n';
+            output.textContent += 'Using alternative method...\n';
+        }
+    }
+    
+    extractData();
+    </script>
+</body>
+</html>
