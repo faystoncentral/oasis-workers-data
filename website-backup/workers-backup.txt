@@ -1,0 +1,23 @@
+// WORKER DATA BACKUP FROM: 3019-idfdwc8z6nkjby2fx78m3-d0b9e1e2.sandbox.novita.ai
+// Extracted on: 2024-11-10
+
+const workers = [
+  // Worker 1
+  {id:1,name:"김철수",nameEn:"Chul-soo Kim",gender:"Male",age:28,nationality:"Korean",maritalStatus:"Single",photo:null,education:"Agricultural Technology Diploma",experience:[{period:"2020-2023",position:"Farm Manager Assistant",company:"Green Valley Farm",description:"Managed crop cultivation and livestock care"},
+
+  // Worker 2
+  {id:2,name:"이영희",nameEn:"Young-hee Lee",gender:"Female",age:32,nationality:"Korean",maritalStatus:"Married",photo:null,education:"Hospitality Management Degree",experience:[{period:"2019-2024",position:"Restaurant Supervisor",company:"Seoul Garden Restaurant",description:"Supervised kitchen operations and staff training"},
+
+  // Worker 3
+  {id:3,name:"박민수",nameEn:"Min-soo Park",gender:"Male",age:25,nationality:"Korean",maritalStatus:"Single",photo:null,education:"Construction Technology Certificate",experience:[{period:"2021-2024",position:"Construction Worker",company:"Seoul Construction Ltd",description:"Residential and commercial building construction"},
+
+  // Worker 4
+  {id:4,name:"최은지",nameEn:"Eun-ji Choi",gender:"Female",age:29,nationality:"Korean",maritalStatus:"Single",photo:null,education:"Nursing Certificate",experience:[{period:"2020-2024",position:"Aged Care Assistant",company:"Seoul Care Center",description:"Elderly care and health assistance"},
+
+  // Worker 5
+  {id:5,name:"정현우",nameEn:"Hyun-woo Jung",gender:"Male",age:26,nationality:"Korean",maritalStatus:"Married",photo:null,education:"Mechanical Engineering Degree",experience:[{period:"2022-2024",position:"Machine Operator",company:"Samsung Manufacturing",description:"Industrial machinery operation and maintenance"},
+
+  // Worker 6
+  {id:6,name:"윤서연",nameEn:"Seo-yeon Yoon",gender:"Female",age:24,nationality:"Korean",maritalStatus:"Single",photo:null,education:"Business Administration Degree",experience:[{period:"2023-2024",position:"Administrative Assistant",company:"Global Trading Co.",description:"Office administration and customer service"}
+
+];

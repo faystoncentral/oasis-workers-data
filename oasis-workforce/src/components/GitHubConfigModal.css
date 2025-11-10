@@ -1,0 +1,77 @@
+.github-modal {
+  max-width: 600px;
+}
+
+.github-header-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.github-info {
+  padding: 20px 32px;
+  background: #eff6ff;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.github-info p {
+  color: #1e40af;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.github-form {
+  padding: 32px;
+}
+
+.github-form .form-group {
+  margin-bottom: 24px;
+}
+
+.github-form small {
+  display: block;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.github-form small a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.github-form small a:hover {
+  text-decoration: underline;
+}
+
+.github-warning {
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.github-warning strong {
+  display: block;
+  color: #92400e;
+  margin-bottom: 8px;
+}
+
+.github-warning p {
+  color: #78350f;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .github-info {
+    padding: 16px 20px;
+  }
+
+  .github-form {
+    padding: 24px 20px;
+  }
+}
